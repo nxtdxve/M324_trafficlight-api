@@ -7,7 +7,7 @@ RUN apt-get install -y nano && apt-get install -y bash \
 RUN mkdir /server
 WORKDIR /server
 
-COPY * .
+COPY ./server/* .
 RUN npm install
 EXPOSE 3000
 
